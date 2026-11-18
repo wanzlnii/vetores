@@ -1,0 +1,11 @@
+<script>
+    let nota = [];
+    let soma = 0;
+    for (let i = 0; i < 8; i++) {
+        nota[i] = parseFloat(prompt("digite a " + (i+1) +"° nota:"));
+        soma += nota[i];
+    }
+    let media = soma / 8;
+    document.write("nota: "+ nota + "<br>") ;
+    document.write("a media das notas é: "+ media.toFixed(2));
+</script>

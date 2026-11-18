@@ -1,0 +1,17 @@
+<script>
+    let vetorA=[];
+    for(let i=0; i<5;i++) {
+        vetorA[i] = parseInt((prompt("Digite o "+(i+1)+"° valor de A:")));
+    }
+    let vetorB =[];
+    for(let i=0; i<5;i++){
+        vetorB[i] = parseInt((prompt("Digite o "+(i+1)+"° valor de B:")));
+    }
+    let vetorC = [];
+    for (let i = 0; i < 5; i++) {
+        vetorC[i] = (vetorA[i] + vetorB[i]);
+    }
+    document.write("Vetor A: " +vetorA+"<br>");
+    document.write("Vetor B: " +vetorB+"<br>");
+    document.write("Vetor C (Soma): " +vetorC);
+</script>

@@ -1,0 +1,16 @@
+<script>
+    let numero = [];
+    for (let i = 0; i < 10; i++) {
+        numero[i] = parseInt(prompt("Digite o " + (i + 1) + "º número:"));
+    }
+    for (let i = 0; i < 10; i++) {
+        for (let j = i + 1; j < 10; j++) {
+            if (numero[i] > numero[j]) {
+                let aux = numero[i];
+                numero[i] = numero[j];
+                numero[j] = aux;
+            }
+        }
+    }
+    document.write("Números em ordem crescente: " + numeros);
+</script>

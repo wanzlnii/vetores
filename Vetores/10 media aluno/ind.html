@@ -1,0 +1,33 @@
+<script>
+let notas = [];
+let soma = 0;
+let aprovados = 0;
+let reprovados = 0;
+
+// Exemplo simulado de notas (ou você pode usar prompt() no navegador / readline no Node.js)
+// a) Solicitar as notas dos 10 alunos e armazenar em um vetor[cite: 1]
+for (let i = 0; i < 10; i++) {
+    // Substitua o valor fixo abaixo por parseFloat(prompt(`Digite a nota do aluno ${i + 1}:`)) se for executar no navegador
+    let notaAluno = parseFloat(prompt(`Digite a nota do aluno ${i + 1}:`));
+    
+    notas.push(notaAluno);
+    soma += notas[i]; // Acumula para calcular a média
+
+    // c) Contar aprovados (nota >= 6) e d) reprovados (nota < 6)[cite: 1]
+    if (notas[i] >= 6) {
+        aprovados++;
+    } else {
+        reprovados++;
+    }
+}
+
+// b) Calcular a média geral da turma[cite: 1]
+let mediaGeral = soma / notas.length;
+
+// e) Apresentar todas as notas armazenadas no vetor[cite: 1]
+console.log("--- Resultados da Turma ---");
+console.log("Notas cadastradas:", notas);
+console.log(`Média geral da turma: ${mediaGeral.toFixed(2)}`);
+console.log(`Alunos aprovados: ${aprovados}`);
+console.log(`Alunos reprovados: ${reprovados}`);
+</script>

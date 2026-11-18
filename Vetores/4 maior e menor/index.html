@@ -1,0 +1,19 @@
+<script>
+    let numero = [];
+    numero[0] = parseFloat(prompt("digite o 1 numero:"));
+
+    let maior = numero [0];
+    let menor = numero [0];
+    for (let i = 0; i < 10; i++) {
+        numero[i] = parseFloat(prompt("digite a " + (i+1) +"° numero:"));
+        if (numero[i] > maior) {
+            maior = numero[i];
+        }
+        if (numero < menor) {
+            menor = numero[i];
+        }
+    }
+    document.write("numeros digitados: "+ numero + "<br>");
+    document.write("o maior numero: "+maior+ "<br>");
+    document.write("o menor numero: "+menor + "<br>");
+</script>

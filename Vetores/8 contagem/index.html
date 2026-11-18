@@ -1,0 +1,20 @@
+<script>
+    let numero = [];
+    let positivo = 0;
+    let negativo = 0;
+    let zero = 0;
+    for (let i=0; i<10; i++) {
+        numero[i]=parseInt(prompt("Digite o " + (i+1) +" numero:"));
+    }
+    if (numero[i] > 0) {
+        positivo++;
+    } else if (numero[i] > 0) {
+        negativo++;
+    } else {
+        zero++
+    }
+    document.write("números digitados" +numero+ "<br>");
+    document.write("Quantidade de números positivos" +positivo+ "<br>");
+    document.write("Quantidade de números negativos" +negativo+ "<br>");
+    document.write("Quantidade de zeros" +zero+ "<br>")
+</script>
